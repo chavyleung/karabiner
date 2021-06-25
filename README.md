@@ -2,12 +2,12 @@
 
 通过 短按 (⌘ | ⌥) 切换 中、英 输入法
 
-0. 短按 左 Command (⌘) 切换 ZH
-1. 短按 右 Command (⌘) 切换 EN
-2. 短按 左 Option (⌥) 切换 EN
-3. 短按 左 Shift (⇧) 切换 EN
-4. 短按 Caps 切换 EN
-5. 替换 Caps 为组合键: ⌃ + ⌘ + ⌥ + ⇧
+1. 短按 左 Command (⌘) 切换 ZH
+2. 短按 右 Command (⌘) 切换 EN
+3. 短按 左 Option (⌥) 切换 EN
+4. 短按 左 Shift (⇧) 切换 EN
+5. 短按 Caps Lock 切换 EN
+6. 替换 Caps Lock 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
 
 ## 安装
 
@@ -39,3 +39,17 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 2. 短按 (⌥) 的时候切到中文输入法
 
 这样我就不用盲猜当前输入法是什么状态了
+
+## 其他说明
+
+关于：6. 替换 Caps Lock 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
+
+因为我有些快捷键是：
+`⌃` + `⌘` + `⌥` + `⇧` + `D`：选词翻译
+`⌃` + `⌘` + `⌥` + `⇧` + `S`：识图翻译
+`⌃` + `⌘` + `⌥` + `⇧` + `C`：使用 Code 打开当前前目录
+`⌃` + `⌘` + `⌥` + `⇧` + `T`：使用 终端 打开当前前目录
+
+这样我只需要 `Caps` + `D` 就可以选词翻译了
+
+> 如果不需要，可以 remove 这个映射
