@@ -15,6 +15,8 @@
 
 点击 [这里](karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chavyleung/karabiner/main/karabiner.json) 直接导入
 
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chavyleung/karabiner/main/karabiner.json
+
 ### 第二种：本地安装
 
 把 `karabiner.json` 复制到: `~/.config/karabiner/assets/complex_modifications` 下
