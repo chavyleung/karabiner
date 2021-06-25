@@ -13,9 +13,11 @@
 
 ### 第一种：远程导入
 
-点击 [这里](karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chavyleung/karabiner/main/karabiner.json) 直接导入
+复制到浏览器打开
 
+```
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/chavyleung/karabiner/main/karabiner.json
+```
 
 ### 第二种：本地安装
 
