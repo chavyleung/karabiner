@@ -11,11 +11,14 @@
           },
           "to": [
             {
-              "key_code": "left_command",
-              "lazy": true
+              "key_code": "left_command"
             }
           ],
           "to_if_alone": [
+            {
+              "key_code": "left_command",
+              "lazy": true
+            },
             {
               "select_input_source": {
                 "language": "zh*"
@@ -40,11 +43,14 @@
           },
           "to": [
             {
-              "key_code": "right_command",
-              "lazy": true
+              "key_code": "right_command"
             }
           ],
           "to_if_alone": [
+            {
+              "key_code": "right_command",
+              "lazy": true
+            },
             {
               "select_input_source": {
                 "language": "en"
@@ -79,11 +85,14 @@
           },
           "to": [
             {
-              "key_code": "left_option",
-              "lazy": true
+              "key_code": "left_option"
             }
           ],
           "to_if_alone": [
+            {
+              "key_code": "left_option",
+              "lazy": true
+            },
             {
               "select_input_source": {
                 "language": "en"
@@ -103,11 +112,14 @@
           },
           "to": [
             {
-              "key_code": "left_shift",
-              "lazy": true
+              "key_code": "left_shift"
             }
           ],
           "to_if_alone": [
+            {
+              "key_code": "left_shift",
+              "lazy": true
+            },
             {
               "select_input_source": {
                 "language": "en"
