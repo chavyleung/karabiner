@@ -2,16 +2,17 @@
 
 通过 短按 ( `⌘` | `⌥` ) 切换 `中`、`英` 输入法
 
-1. 短按 左 Command `⌘` 切换 `ZH`
-2. 短按 右 Command `⌘` 切换 `EN`
-3. 短按 左 Option `⌥` 切换 `EN`
+1. 短按 左 Command `⌘` 轮换 `ZH`
+2. 短按 左 Command `⌘` 切换 `ZH` **（与前一项冲突，请二选一）**
+3. 短按 右 Command `⌘` 切换 `EN`
+4. 短按 左 Option `⌥` 切换 `EN`
 
-4. 短按 左 Shift `⇧` 切换 `EN`
-5. 短按 左 Shift `⇧` 轮换 **（与前一项冲突，请二选一）**
+5. 短按 左 Shift `⇧` 轮换
+6. 短按 左 Shift `⇧` 切换 `EN` **（与前一项冲突，请二选一）**
 
-6. 短按 `Caps Lock` 切换 `EN`
-7. 长按 `Caps Lock` 锁定 `大小写`
-8. 替换 `Caps Lock` 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
+7. 短按 `Caps Lock` 切换 `EN`
+8. 长按 `Caps Lock` 锁定 `大小写`
+9. 替换 `Caps Lock` 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
 
 ## 安装
 
@@ -29,7 +30,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 ## 然后
 
-关掉中文输入法的 `中英` 切换快捷键
+1. 只保留 `ABC` 和 `中文` 两种输入法
+2. 关掉中文输入法的 `中英` 切换快捷键
 
 ## 为什么
 
@@ -46,7 +48,17 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 ## 其他说明
 
-关于：6. 替换 Caps Lock 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
+### 关于：1. 短按 左 Command `⌘` 轮换 `ZH`，为什么要叫 `轮换` ?
+
+因为指定切换与中文输入法会不稳定出 BUG (显示切到中文了，但实际打出来的还是英文)
+
+所以切换中文实现的方式是： 模拟一次 `⌃` + `space`
+
+这样做的好处是切换不会出 BUG
+
+坏处是系统只能保留 `ABC` 和 `中文` 两种输入法
+
+### 关于：6. 替换 `Caps Lock` 为组合键: `⌃` + `⌘` + `⌥` + `⇧`
 
 因为我有些快捷键是：
 

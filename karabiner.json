@@ -2,7 +2,60 @@
   "title": "单键切换中英输入法: ⌘ ⌥ ⇧ Caps ",
   "rules": [
     {
-      "description": "短按 左 Command (⌘) 切换 ZH",
+      "description": "(A1) 短按 左 Command (⌘) 轮换 ZH (通过 ⌃ + Space 实现) - 【与 A2 冲突，请二选一】",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "input_sources": [
+                {
+                  "language": "zh-Hans"
+                }
+              ],
+              "type": "input_source_unless"
+            }
+          ],
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "input_sources": [
+                {
+                  "language": "zh-Hans"
+                }
+              ],
+              "type": "input_source_if"
+            }
+          ],
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "(A2)短按 左 Command (⌘) 切换 ZH (精准切换, 但可能会出现切换失败情况) - 【与 A1 冲突，请二选一】",
       "manipulators": [
         {
           "type": "basic",
@@ -76,30 +129,7 @@
       ]
     },
     {
-      "description": "短按 左 Shift (⇧) 切换 EN",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_shift"
-          },
-          "to": [
-            {
-              "key_code": "left_shift"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "en"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "短按 左 Shift (⇧) 轮换",
+      "description": "(B1) 短按 左 Shift (⇧) 轮换 - 【与 B2 冲突，请二选一】",
       "manipulators": [
         {
           "type": "basic",
@@ -120,6 +150,29 @@
           "to_if_held_down": [
             {
               "key_code": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "(B2) 短按 左 Shift (⇧) 切换 EN - 【与 B1 冲突，请二选一】",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift"
+          },
+          "to": [
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "en"
+              }
             }
           ]
         }
